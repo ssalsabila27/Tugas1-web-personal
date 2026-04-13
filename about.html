@@ -2,90 +2,108 @@
 <html>
 <head>
     <title>About</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
+    
 <body>
 
-<nav>
-    <div class="logo">Portfolio</div>
-    <div class="menu">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-primary" href="#">Portfolio</a>
+
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="menu">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="about.html">About</a></li>
+      </ul>
     </div>
+  </div>
 </nav>
 
-<section class="content">
+<!-- CONTENT -->
+<div class="container mt-5 mb-5">
+  <div class="row g-4">
 
-    <div class="card">
-        <h2>Data Diri</h2>
-        <table>
-            <tr>
-                <th>Data</th>
-                <th>Keterangan</th>
-            </tr>
-            <tr>
-                <td>Nama</td>
-                <td>SYIFA SALSABILA</td>
-            </tr>
-            <tr>
-                <td>NPM</td>
-                <td>2408107010018</td>
-            </tr>
-            <tr>
-                <td>Program Studi</td>
-                <td>Informatika</td>
-            </tr>
-            <tr>
-                <td>Universitas</td>
-                <td>Universitas Syiah Kuala</td>
-            </tr>
-            <tr>
-                <td>Tahun masuk</td>
-                <td>2024</td>
-            </tr>
-            <tr>
-                <td>Semester</td>
-                <td>4</td>
-            </tr>
-            <tr>
-                <td>Email</td>
-                <td>syifa242@mhs.usk.ac.id</td>
-            </tr>
-        </table>
+    <!-- DATA DIRI -->
+    <div class="col-md-6">
+      <div class="card card-custom">
+        <div class="card-body">
+          <h4 class="card-title mb-3">Data Diri</h4>
+
+          <table class="table table-striped">
+            <tr><th>Data</th><th>Keterangan</th></tr>
+            <tr><td>Nama</td><td>Syifa Salsabila</td></tr>
+            <tr><td>NPM</td><td>2408107010018</td></tr>
+            <tr><td>Program Studi</td><td>Informatika</td></tr>
+            <tr><td>Universitas</td><td>Universitas Syiah Kuala</td></tr>
+            <tr><td>Tahun Masuk</td><td>2024</td></tr>
+            <tr><td>Semester</td><td>4</td></tr>
+            <tr><td>Email</td><td>syifa242@mhs.usk.ac.id</td></tr>
+          </table>
+
+        </div>
+      </div>
     </div>
 
-    <div class="card">
-    <h2>Riwayat Pendidikan</h2>
-         <ul>
-            <li>SD Negeri 1 Langsa (2012 - 2018)</li>
-            <li>SMP Negeri 3 Langsa(2018 - 2021)</li>
-            <li>SMA Negeri Unggul Aceh Timur (2021 - 2024)</li>
-            <li>S1 Informatika - Universitas Syiah Kuala (2024 - Sekarang)</li>
-        </ul>
+    <!-- RIWAYAT -->
+    <div class="col-md-6">
+      <div class="card card-custom">
+        <div class="card-body">
+          <h4 class="card-title mb-3">Riwayat Pendidikan</h4>
+
+          <ul class="list-group">
+            <li class="list-group-item">SD Negeri 1 Langsa (2012 - 2018)</li>
+            <li class="list-group-item">SMP Negeri 3 Langsa (2018 - 2021)</li>
+            <li class="list-group-item">SMA Negeri Unggul Aceh Timur (2021 - 2024)</li>
+            <li class="list-group-item">S1 Informatika Universitas Syiah Kuala (2024 - Sekarang)</li>
+          </ul>
+
+        </div>
+      </div>
     </div>
 
-   <div class="card">
-    <h2>Mata Kuliah yang Telah & Sedang Dipelajari</h2>
-    <p>
-        Selama empat semester, telah mempelajari berbagai mata kuliah 
-        di bidang pemrograman, data, dan sistem komputer.
-    </p>
-        <ul>
-        <li>Struktur Data & Algoritma</li>
-        <li>Struktur Diskrit</li>
-        <li>Jaringan Komputer</li>
-        <li>Basis Data I & II</li>
-        <li>Sistem Operasi</li>
-        <li>Pemrograman Berbasis Web</li>
-        <li>Rekayasa Perangkat Lunak</li>
-    </ul>
+    <!-- MATA KULIAH -->
+    <div class="col-md-12">
+      <div class="card card-custom">
+        <div class="card-body">
+          <h4 class="card-title mb-3">Mata Kuliah</h4>
+
+          <p>
+            Selama empat semester, telah mempelajari berbagai mata kuliah 
+            di bidang pemrograman dan sistem komputer.
+          </p>
+
+          <ul class="list-group">
+            <li class="list-group-item">Struktur Data & Algoritma</li>
+            <li class="list-group-item">Struktur Diskrit</li>
+            <li class="list-group-item">Jaringan Komputer</li>
+            <li class="list-group-item">Basis Data I & II</li>
+            <li class="list-group-item">Sistem Operasi</li>
+            <li class="list-group-item">Pemrograman Web</li>
+            <li class="list-group-item">Rekayasa Perangkat Lunak</li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
-</section>
-
-<footer>
+<!-- FOOTER -->
+<footer class="text-center p-3 footer-custom">
     © 2026 Syifa Salsabila | Personal Website
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
